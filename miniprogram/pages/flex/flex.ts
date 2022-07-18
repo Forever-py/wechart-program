@@ -1,4 +1,4 @@
-// pages/about/about.ts
+// pages/flex/flex.ts
 Page({
 
   /**
@@ -7,16 +7,12 @@ Page({
   data: {
 
   },
-  show() {
-    wx.showToast({
-      title: 'this is about page'
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-    console.log('this is a onLoad')
+
   },
 
   /**
@@ -51,20 +47,20 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-    console.log('this is a onPullDownRefresh')
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-    console.log('onReachBottom')
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-    console.log('onShareAppMessage')
+
   }
 })

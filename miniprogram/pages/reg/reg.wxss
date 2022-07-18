@@ -1,0 +1,42 @@
+page {
+  background-color: #f0f0f0;
+}
+
+.row {
+  margin: 20rpx 20rpx 0;
+  overflow: hidden;
+  line-height: 100rpx;
+  border-bottom: 1rpx solide #ccc;
+  color: #777;
+  background-color: #fff;
+}
+
+.info-input1 {
+  width: 420rpx;
+  height: 100rpx;
+  margin-left: 50rpx;
+  color: #777;
+  float: left;
+}
+
+.info .button {
+  width: 200rpx;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  background-color: #3f9;
+  margin-left: 10rpx;
+  margin-top: 15rpx;
+  float: left;
+}
+
+.info-input {
+  height: 100rpx;
+  margin-left: 50rpx;
+  color: #777;
+}
+
+.info .submit {
+  width: 100%;
+}

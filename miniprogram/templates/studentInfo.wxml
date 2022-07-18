@@ -1,0 +1,6 @@
+<template name="studentInfo">
+  <view>
+    <view> {{index}}: {{msg}} </view>
+    <view> Time: {{time}} </view>
+  </view>
+</template>

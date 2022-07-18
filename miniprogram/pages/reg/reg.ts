@@ -1,22 +1,33 @@
-// pages/about/about.ts
+// pages/reg/reg.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    formState: {
+      phone:''
+    }
   },
-  show() {
-    wx.showToast({
-      title: 'this is about page'
+  /**
+   * 手机电话获取
+   */
+  inputPhone(e: any) {
+    this.setData({
+      ['formState.phone'] : e.detail.value
     })
+  },
+  /**
+   * 提交注册信息
+   */
+  showPhone() {
+    console.log(this.data.formState)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-    console.log('this is a onLoad')
+
   },
 
   /**
@@ -51,20 +62,20 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-    console.log('this is a onPullDownRefresh')
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-    console.log('onReachBottom')
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-    console.log('onShareAppMessage')
+
   }
 })

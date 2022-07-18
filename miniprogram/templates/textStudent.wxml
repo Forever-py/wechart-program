@@ -1,0 +1,6 @@
+<template name="textStudent">
+  <view>
+    <view> {{index}}: {{msg}} </view>
+    <view> 时间: {{time}} </view>
+  </view>
+</template>

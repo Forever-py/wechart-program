@@ -1,0 +1,26 @@
+<view>
+  <view>
+    <scroll-view scroll-x>
+      <view class="nav">
+        <block wx:for="{{navigatorArr}}" wx:key="index">
+          <navigator class="{{classArr[index == currentTab?0:1]}}" data-index="{{index}}" bindtap="campusActivity" url="">{{item}}</navigator>
+          <!-- <navigator class="{{classArr[index]}}" data-index="{{index}}" bindtap="campusActivity" url="">{{item}}</navigator> -->
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<view>
+  <swiper current="{{currentTab}}" class="swiper-height" style="height:{{swiperHeight}}rpx;" bindchange="changeSwiper">
+    <swiper-item class="bg-red">11</swiper-item>
+    <swiper-item class="bg-green">22</swiper-item>
+    <swiper-item class="bg-blue">33</swiper-item>
+    <swiper-item class="bg-red">44</swiper-item>
+    <swiper-item class="bg-green">55</swiper-item>
+    <swiper-item class="bg-blue">66</swiper-item>
+    <swiper-item class="bg-red">77</swiper-item>
+    <swiper-item class="bg-green">88</swiper-item>
+    <swiper-item class="bg-blue">99</swiper-item>
+  </swiper>
+</view>

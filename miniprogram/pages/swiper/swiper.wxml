@@ -1,0 +1,67 @@
+<!-- scroll-view -->
+<view>
+  <scroll-view class="backgroun-scroll" scroll-x>
+    <view class="nav">
+      <navigator url="">国际新闻</navigator>
+      <navigator url="">国内新闻</navigator>
+      <navigator url="">社会新闻</navigator>
+      <navigator url="">娱乐新闻</navigator>
+      <navigator url="">IT新闻</navigator>
+      <navigator url="">八卦新闻</navigator>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- swiper -->
+<view>
+  <swiper autoplay indicator-dots bindchange="changeCurrent">
+    <swiper-item>
+      <navigator url="/pages/about/about">
+        <image class="image" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202004%2F25%2F20200425173132_svsej.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660372446&t=e867f9d803d0f655209694d3ff31b76e"></image>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <image class="image" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210F2130512J47-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660377375&t=32f497aee52b7023f90c063b9dfb4e18"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 新闻列表 -->
+<swiper>
+  <swiper-item>
+    <view class="view-con">
+      <image class="img" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210F2130512J47-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660377375&t=32f497aee52b7023f90c063b9dfb4e18"></image>
+      <view class="news-title">
+        <view>微信课程发滑块容器学习1</view>
+        <text class="fnt-content">微信课程发滑块容器学习微信课程发滑块容器学习</text>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="view-con">
+      <image class="img" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210F2130512J47-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660377375&t=32f497aee52b7023f90c063b9dfb4e18"></image>
+      <view class="news-title">
+        <view>微信课程发滑块容器学习2</view>
+        <text class="fnt-content">微信课程发滑块容器学习微信课程发滑块容器学习</text>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>
+<scroll-view class="backgroun-scroll" scroll-x>
+  <view class="nav1">
+    <view class="view-con">
+      <image class="img" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210F2130512J47-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660377375&t=32f497aee52b7023f90c063b9dfb4e18"></image>
+      <view class="news-title">
+        <view>微信课程发滑块容器学习1</view>
+        <text class="fnt-content">微信课程发滑块容器学习微信课程发滑块容器学习</text>
+      </view>
+    </view>
+    <view class="view-con">
+      <image class="img" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210F2130512J47-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660377375&t=32f497aee52b7023f90c063b9dfb4e18"></image>
+      <view class="news-title">
+        <view>微信课程发滑块容器学习2</view>
+        <text class="fnt-content">微信课程发滑块容器学习微信课程发滑块容器学习</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

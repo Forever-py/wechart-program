@@ -1,0 +1,7 @@
+<view>name: {{studentName}}</view>
+<view>age: {{studentAge}}</view>
+<view class="{{flag ? 'color-red' : 'color-green'}}">score:90</view>
+<view id="item{{id}}">
+  item-view
+</view>
+<view wx:for="{{studentScores}}"  wx:key="key">{{item}}</view>

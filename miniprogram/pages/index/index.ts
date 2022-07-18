@@ -45,5 +45,8 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  onReachBottom() {
+    console.log('onReachBottom')
+  },
 })

@@ -1,0 +1,11 @@
+<!-- display flex -->
+<view class="outer-view">
+  <view class="inner-view"></view>
+  <!-- <view class="inner-view"></view>
+  <view class="inner-view"></view>
+  <view class="inner-view"></view>
+  <view class="inner-view"></view>
+  <view class="inner-view"></view>
+  <view class="inner-view"></view>
+  <view class="inner-view"></view> -->
+</view>

@@ -1,0 +1,16 @@
+<!-- 引用模板  import 引入-->
+<import src="/templates/studentInfo.wxml"/>
+<import src="/templates/textStudent.wxml"/>
+<!-- 模板定义 -->
+<!-- <template name="textStudent">
+  <view>
+    <view> {{index}}: {{msg}} </view>
+    <view> 时间: {{time}} </view>
+  </view>
+</template> -->
+<!-- 模板使用 -->
+<template is="textStudent" data="{{...item}}" />
+<template is="{{flsgTemp % 2 == 0 ?'studentInfo':'textStudent'}}" data="{{...item}}"></template>
+
+<!-- include 包含 不能包含template元素-->
+<include src="/templates/footer.wxml"/>

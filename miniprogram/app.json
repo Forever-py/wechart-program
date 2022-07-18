@@ -1,8 +1,17 @@
 {
   "pages": [
+    "pages/reg/reg",
+    "pages/icon/icon",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/swiper/swiper",
+    "pages/flex/flex",
+    "pages/bind/bind",
+    "pages/templateDemo/templateDemo",
+    "pages/event/event",
+    "pages/eventDemo/eventDemo",
+    "pages/audio/audio"
   ],
   "window": {
     "backgroundTextStyle": "dark",

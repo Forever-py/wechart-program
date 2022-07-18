@@ -1,3 +1,4 @@
 <!--pages/about/about.wxml-->
 <text>hello</text><text class="fnt-red">this is</text>
 <view class="container">world</view>
+<button bindtap="show">link</button>

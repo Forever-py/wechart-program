@@ -1,0 +1,18 @@
+<view bindtap="{{eventFun}}">Click me</view>
+<view bindlongtap="longtap">Click me</view>
+
+<!-- 事件分类
+事件冒泡：bind开头，
+非事件冒泡： catch开头
+ -->
+ <view id="outer" bindtap="handleTap1">
+  outer view
+  <view id="middle" catchtap="handleTap2">
+    middle view
+    <view id="inner" bindtap="handleTap3">
+      inner view
+    </view>
+  </view>
+</view>
+
+<!-- 事件捕获 -->
