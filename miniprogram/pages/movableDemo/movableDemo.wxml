@@ -1,0 +1,8 @@
+<view wx:for="{{items}}" wx:key="index">
+  <movable-area class="movable-area">
+    <movable-view class="movable-view" direction="horizontal">
+      <view class="touch-item" data-index="index" bindtouchstart="touchstart">
+      </view>
+    </movable-view>
+  </movable-area>
+</view>

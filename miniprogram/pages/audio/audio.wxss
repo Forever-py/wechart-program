@@ -1,1 +1,3 @@
-/* pages/audio/audio.wxss */
+.content .btn {
+  width: 100vw;
+}

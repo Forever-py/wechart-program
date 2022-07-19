@@ -1,39 +1,33 @@
-// pages/audio/audio.ts
+const myaudio = wx.createInnerAudioContext();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    isPlay: false,
     poster: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
     name: '此时此刻',
     author: '许巍',
-    src: 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46',
+    src: 'http://dl.stream.qqmusic.qq.com/C400003SC0S90IT7XE.m4a?guid=5811079000&vkey=BE9D90AC6FFB354E41E2819E176A3E2D60B5EDE5290839A0C2D201DD60CC29754425ADDB19232B347DE2CEDEF588557280DF717D76A3F799&uin=&fromtag=120032',
   },
+
   /**
    * 播放
    */
-  audioPlay: function () {
-    this.audioCtx.play()
+  play() {
+    myaudio.play();
+    this.setData({ isPlay: true });
   },
+
   /**
    * 暂停
    */
-  audioPause: function () {
-    this.audioCtx.pause()
+  stop() {
+    myaudio.pause();
+    this.setData({ isPlay: false });
   },
-  /**
-   * 从14s处播放
-   */
-  audio14: function () {
-    this.audioCtx.seek(14)
-  },
-  /**
-   * 从0开始播放
-   */
-  audioStart: function () {
-    this.audioCtx.seek(0)
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -45,15 +39,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-    // 创建一个音频对象
-    this.audioCtx = wx.createAudioContext('myAudio')
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    myaudio.src = this.data.src;
   },
 
   /**

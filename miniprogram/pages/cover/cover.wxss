@@ -1,0 +1,15 @@
+/* pages/cover/cover.wxss */
+.video-screen {
+  width: 100%;
+  position: relative;
+}
+.img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.pause,.play {
+  position: absolute;
+  left: 25rpx;
+  top: 250rpx;
+}

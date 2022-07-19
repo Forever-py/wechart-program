@@ -11,7 +11,12 @@
     "pages/templateDemo/templateDemo",
     "pages/event/event",
     "pages/eventDemo/eventDemo",
-    "pages/audio/audio"
+    "pages/audio/audio",
+    "pages/audioInner/audioInner",
+    "pages/movable/movable",
+    "pages/video/video",
+    "pages/cover/cover",
+    "pages/movableDemo/movableDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",

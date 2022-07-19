@@ -1,0 +1,13 @@
+<!-- 当前停止状态 -->
+<view class="audio-stop" wx:if="{{isPlay == false}}" bindtap="play">
+  <image class="audio-stop-img" src="{{poster}}"></image>
+  <image class="audio-stop-play" src="/images/play.png"></image>
+</view>
+
+<!-- 当前播放状态 -->
+<view class="audio-play" wx:else bindtap="stop">
+  <image class="audio-play-img" src="{{poster}}"></image>
+  <image class="audio-play-play" src="/images/stop.png"></image>
+</view>
+
+<slider class="slider-cls"></slider>

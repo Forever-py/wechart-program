@@ -1,0 +1,9 @@
+<view>cover-view的覆盖在组件之上</view>
+<video class="video-screen" id="myVideo" src="https://cn-sccd3-cmcc-v-13.bilivideo.com/upgcxcode/68/54/478515468/478515468-1-400.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1658224468&gen=playurlv2&os=bcache&oi=1974330172&trid=0000021f6e2134bd48249cd7e732dbb89fddp&mid=1025821297&platform=html5&upsig=743deb6099216b392e32e8b2334d29b7&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&cdnid=40044&bvc=vod&nettype=0&orderid=0,1&bw=57690&logo=80000000">
+  <cover-view class="pause" wx:if="{{playing}}" bindtap="pause">
+    <cover-image class="img" src="/images/stop.png"></cover-image>
+  </cover-view>
+  <cover-view wx:else class="play" bindtap="play">
+    <cover-image class="img" src="/images/play.png"></cover-image>
+  </cover-view>
+</video>
