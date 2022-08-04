@@ -1,0 +1,14 @@
+<progress percent="20" show-info stroke-width="3" />
+<progress percent="40" active stroke-width="3" />
+<progress percent="60" active stroke-width="6" />
+<progress percent="80" color="#10AEFF" active stroke-width="3" />
+
+<progress percent="100" active stroke-width="4">
+  <view class="title-line">progress</view>
+</progress>
+
+<view>
+  <button type="primary" size="mini" bindtap="startDown">开始下载</button>
+  <text>下载进度</text>
+  <progress percent="{{percent}}" show-info active="{{isDown}}" stroke-width="3"></progress>
+</view>

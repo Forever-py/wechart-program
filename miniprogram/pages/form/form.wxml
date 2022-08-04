@@ -1,0 +1,41 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!-- <input name="inputName" /> -->
+  <view>button</view>
+  <button size="mini">按钮</button>
+  <button size="mini" type="primary">按钮</button>
+  <button size="mini" type="warn">按钮</button>
+  <button size="mini" type="warn" plain>按钮</button>
+  <button size="mini" type="warn" disabled="{{false}}">按钮</button>
+  <button size="mini" type="warn" disabled="{{true}}" loading="{{true}}">按钮</button>
+  <button size="mini" lang="en">按钮</button>
+  <button size="mini" lang="en" bindtap="phonenumber">按钮</button>
+
+  <view>checkbox</view>
+  <checkbox-group name="checkbox" bindchange="checkboxFun">
+    <checkbox value="checkbox1">选项一</checkbox>
+    <checkbox value="checkbox2">选项二</checkbox>
+  </checkbox-group>
+  <checkbox-group name="checkbox" bindchange="checkboxFun">
+    <label wx:for="{{items}}" wx:key="index">
+      <checkbox value="{{item.name}}" checked="{{item.checked}}">{{item.value}}</checkbox>
+    </label>
+  </checkbox-group>
+
+
+  <view>editor</view>
+  <editor id="editor" placeholder="this is editor" showImgResize showImgSize showImgToolbar bindstatuschange="onstatusChange"></editor>
+
+
+  <view>input</view>
+  <!-- 文本 -->
+  <input type="text" name="input" placeholder="这是一个输入框" />
+  <!-- 数字 -->
+  <input type="number" name="input" placeholder="这是一个输入框" />
+  <!-- 身份证 -->
+  <input type="idcard" name="input" placeholder="这是一个输入框" />
+  <!-- 小数 -->
+  <input type="digit" name="input" placeholder="这是一个输入框" />
+
+  <button form-type="submit">Submit</button>
+  <button form-type="reset">Reset</button>
+</form>

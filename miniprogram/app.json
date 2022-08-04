@@ -16,7 +16,10 @@
     "pages/movable/movable",
     "pages/video/video",
     "pages/cover/cover",
-    "pages/movableDemo/movableDemo"
+    "pages/movableDemo/movableDemo",
+    "pages/rich-text/rich-text",
+    "pages/progress/progress",
+    "pages/form/form"
   ],
   "window": {
     "backgroundTextStyle": "dark",
