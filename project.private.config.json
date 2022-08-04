@@ -9,7 +9,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/form/form",
+          "pathName": "pages/navigator/navigator",
           "query": "",
           "launchMode": "default",
           "scene": null

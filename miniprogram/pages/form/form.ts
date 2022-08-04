@@ -14,7 +14,9 @@ Page({
       { name: 'tom', value: '汤姆' },
       { name: 'jerry', checked: 'true', value: '杰瑞' },
       { name: 'mary', value: '玛丽' }
-    ]
+    ],
+    date: '2016-09-01',
+    switchChecked: true
   },
 
   phonenumber(e: any) {
@@ -28,6 +30,25 @@ Page({
   onstatusChange(e: any) {
     const formats = e.detail;
     console.log(e);
+  },
+
+  radioChange(e: any) {
+    console.log(e);
+  },
+
+  bindDateChange: function (e: any) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date: e.detail.value
+    })
+  },
+
+  sliderChange(e: any) {
+    console.log(e)
+  },
+  
+  switchChange(e: any) {
+    console.log(e)
   },
 
   /**

@@ -1,0 +1,4 @@
+<navigator target="self" url="/pages/form/form" open-type="switchTab">tabbar</navigator>
+<navigator target="miniProgram" open-type="exit">小程序间进行跳转</navigator>
+
+<button bindtap="tabbarNavigator">跳转</button>

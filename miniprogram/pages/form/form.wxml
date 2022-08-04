@@ -36,12 +36,27 @@
   <!-- 小数 -->
   <input type="digit" name="input" placeholder="这是一个输入框" />
 
-<view>
-<radio-group bindchange="radioChange">
-  <radio wx:for="{{radioItems}}" wx:key="index" value="{{item.name}}" checked="{{item.checked}}">{{item.value}}</radio>
-</radio-group>
-</view>
+  <view>单选按钮</view>
+  <radio-group bindchange="radioChange">
+    <radio wx:for="{{radioItems}}" wx:key="index" value="{{item.name}}" checked="{{item.checked}}">{{item.value}}</radio>
+  </radio-group>
 
-  <button form-type="submit">Submit</button>
+  <view>picker滚动选择器</view>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view>当前选择{{date}}</view>
+  </picker>
+
+  <view>slider滑动选择器</view>
+  <view>
+    <text>设置step</text>
+    <slider bindchange="sliderChange" max="20" min="-20" step="5" show-value></slider>
+  </view>
+
+  <view>switch开关</view>
+  <switch checked="{{switchChecked}}" bindchange="switchChange" />
+
+  <textarea placeholder="placeholder颜色是红色的" placeholder-style="color:red;" auto-focus />
+
+  <button form-type="submit" type="primary">Submit</button>
   <button form-type="reset">Reset</button>
 </form>

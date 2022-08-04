@@ -19,7 +19,9 @@
     "pages/movableDemo/movableDemo",
     "pages/rich-text/rich-text",
     "pages/progress/progress",
-    "pages/form/form"
+    "pages/form/form",
+    "pages/personCenter/personCenter",
+    "pages/navigator/navigator"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -49,6 +51,12 @@
       {
         "pagePath": "pages/about/about",
         "text": "关于我们",
+        "iconPath": "/images/icon_2.png",
+        "selectedIconPath": "/images/icon_22.png"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "表单",
         "iconPath": "/images/icon_2.png",
         "selectedIconPath": "/images/icon_22.png"
       }
