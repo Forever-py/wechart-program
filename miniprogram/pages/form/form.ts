@@ -9,6 +9,11 @@ Page({
       { name: 'tom', value: '汤姆' },
       { name: 'jerry', checked: 'true', value: '杰瑞' },
       { name: 'mary', value: '玛丽' }
+    ],
+    radioItems: [
+      { name: 'tom', value: '汤姆' },
+      { name: 'jerry', checked: 'true', value: '杰瑞' },
+      { name: 'mary', value: '玛丽' }
     ]
   },
 

@@ -36,6 +36,12 @@
   <!-- 小数 -->
   <input type="digit" name="input" placeholder="这是一个输入框" />
 
+<view>
+<radio-group bindchange="radioChange">
+  <radio wx:for="{{radioItems}}" wx:key="index" value="{{item.name}}" checked="{{item.checked}}">{{item.value}}</radio>
+</radio-group>
+</view>
+
   <button form-type="submit">Submit</button>
   <button form-type="reset">Reset</button>
 </form>
