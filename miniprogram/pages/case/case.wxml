@@ -1,0 +1,5 @@
+<camera class="camera-cls" device-position="front" flash="off">
+  <cover-view class="main-tips">photo</cover-view>
+  <cover-image class="verifycode-cover" src="/images/person.png"></cover-image>
+  <cover-image class="red-photo" src="/images/photo.png" bindtap="photograph"></cover-image>
+</camera>

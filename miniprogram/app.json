@@ -21,7 +21,11 @@
     "pages/progress/progress",
     "pages/form/form",
     "pages/personCenter/personCenter",
-    "pages/navigator/navigator"
+    "pages/navigator/navigator",
+    "pages/camera/camera",
+    "pages/case/case",
+    "pages/case/photo",
+    "pages/map/map"
   ],
   "window": {
     "backgroundTextStyle": "dark",

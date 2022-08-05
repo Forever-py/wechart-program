@@ -9,7 +9,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/navigator/navigator",
+          "pathName": "pages/map/map",
           "query": "",
           "launchMode": "default",
           "scene": null
