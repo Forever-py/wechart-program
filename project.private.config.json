@@ -10,7 +10,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/requestDemo/requestDemo",
+          "pathName": "pages/websocketDemo/websocketDemo",
           "query": "",
           "launchMode": "default",
           "scene": null

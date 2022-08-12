@@ -1,0 +1,15 @@
+/* pages/downloadFile/downloadFile.wxss */
+page {
+  width: 100%;
+}
+
+.download-img {
+  width: 100%;
+  height: 400rpx;
+  margin: 0 auto;
+}
+
+.download-img image {
+  width: 100%;
+  height: 100%;
+}

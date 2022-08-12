@@ -1,45 +1,44 @@
-// pages/requestDemo/requestDemo.ts
+// pages/websocketDemo/websocketDemo.ts
 Page({
-  requestUrl: 'https://www.baidu.com/s?w=asd',
+  message: '',
   /**
    * 页面的初始数据
    */
   data: {
-
+    responseString: '<h1>This is content area</h1>'
   },
 
   /**
-   * 数据请求
+   * 数据获取操作
    */
-  requestOpt() {
+  recodeMessage(e) {
+    this.message = e.detail.value;
+  },
+
+  /**
+   * 发送消息
+   */
+  sendMessage() {
     let that = this;
-    // request操作
-    this.requestTask = wx.request({
-      url: this.requestUrl,
-      data: {},
-      header: {
-        'content-type': 'application/json'
-      },
-      method: 'GET',
-      dataType: 'json',
-      responseType: 'text',
-      success(res) {
-        console.log('success', res)
-      },
-      fail(err) {
-        console.log('fail', err)
-      },
-      complete(res) {
-        console.log('complete', res)
-      }
-    })
-  },
+    // 在线服务器位置 http://coolaf.com/tool/chattest
 
-  /**
-   * 请求终止
-   */
-  requestAbort() {
-    this.requestTask.abort();
+    // 建立连接
+    wx.connectSocket({
+      url: 'ws://82.157.123.54:9010/ajaxchattest'
+    })
+
+    // 连接成功与否的判断
+    wx.onSocketOpen(() => {
+      // 发送socket数据
+      wx.sendSocketMessage({
+        data: that.message
+      })
+    })
+
+    // 监听 WebSocket 接受到服务器的消息事件
+    wx.onSocketMessage((data) => {
+      console.log('[接收到服务器的数据]', data);
+    })
   },
 
   /**

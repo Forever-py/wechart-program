@@ -31,7 +31,11 @@
     "pages/opendata/opendata",
     "pages/webview/webview",
     "pages/funcDemo/funcDemo",
-    "pages/requestDemo/requestDemo"
+    "pages/requestDemo/requestDemo",
+    "pages/downloadFile/downloadFile",
+    "pages/uploadFile/uploadFile",
+    "pages/chat/chat",
+    "pages/websocketDemo/websocketDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",

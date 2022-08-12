@@ -1,6 +1,5 @@
-// pages/requestDemo/requestDemo.ts
+// pages/uploadFile/uploadFile.ts
 Page({
-  requestUrl: 'https://www.baidu.com/s?w=asd',
   /**
    * 页面的初始数据
    */
@@ -8,38 +7,27 @@ Page({
 
   },
 
-  /**
-   * 数据请求
-   */
-  requestOpt() {
-    let that = this;
-    // request操作
-    this.requestTask = wx.request({
-      url: this.requestUrl,
-      data: {},
-      header: {
-        'content-type': 'application/json'
-      },
-      method: 'GET',
-      dataType: 'json',
-      responseType: 'text',
+  imgChoose() {
+    const that = this;
+    wx.chooseImage({
       success(res) {
-        console.log('success', res)
-      },
-      fail(err) {
-        console.log('fail', err)
-      },
-      complete(res) {
-        console.log('complete', res)
+        const tempFilePaths = res.tempFilePaths
+        wx.uploadFile({
+          url: 'https://example.weixin.qq.com/upload',
+          filePath: tempFilePaths[0],
+          name: 'pic1',
+            success(res) {
+              console.log('success', res.data)
+            },
+            fail(err) {
+              console.log('fail', err)
+            },
+            complete(res) {
+              console.log('complete', res)
+            }
+        })
       }
     })
-  },
-
-  /**
-   * 请求终止
-   */
-  requestAbort() {
-    this.requestTask.abort();
   },
 
   /**

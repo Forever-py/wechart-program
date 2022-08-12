@@ -1,30 +1,28 @@
-// pages/requestDemo/requestDemo.ts
+// pages/downloadFile/downloadFile.ts
 Page({
-  requestUrl: 'https://www.baidu.com/s?w=asd',
+  filePath: 'https://img0.baidu.com/it/u=3545714853,3381929207&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800',
   /**
    * 页面的初始数据
    */
   data: {
-
+    src: '',
+    percent: 0,
   },
 
   /**
-   * 数据请求
+   * 下载操作
    */
-  requestOpt() {
+  downloadOpt() {
     let that = this;
-    // request操作
-    this.requestTask = wx.request({
-      url: this.requestUrl,
-      data: {},
-      header: {
-        'content-type': 'application/json'
-      },
-      method: 'GET',
-      dataType: 'json',
-      responseType: 'text',
+    const downloadTask = wx.downloadFile({
+      url: this.filePath,
       success(res) {
         console.log('success', res)
+        if (res.statusCode == 200) {
+          that.setData({
+            src: res.tempFilePath
+          })
+        }
       },
       fail(err) {
         console.log('fail', err)
@@ -33,13 +31,15 @@ Page({
         console.log('complete', res)
       }
     })
-  },
-
-  /**
-   * 请求终止
-   */
-  requestAbort() {
-    this.requestTask.abort();
+    // 终止操作
+    // downloadTask.abort();
+    // 监听下载进度变化事件
+    downloadTask.onProgressUpdate((res) => {
+      console.log(res);
+      that.setData({
+        percent: res.progress
+      })
+    })
   },
 
   /**
