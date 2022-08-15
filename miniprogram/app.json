@@ -35,7 +35,9 @@
     "pages/downloadFile/downloadFile",
     "pages/uploadFile/uploadFile",
     "pages/chat/chat",
-    "pages/websocketDemo/websocketDemo"
+    "pages/websocketDemo/websocketDemo",
+    "pages/recorderDemo/recorderDemo",
+    "pages/recorderDemo2/recorderDemo2"
   ],
   "window": {
     "backgroundTextStyle": "dark",

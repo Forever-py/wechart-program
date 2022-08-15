@@ -1,0 +1,11 @@
+<button bindtap="recordVoice">录制声音</button>
+
+<button bindtap="playVoice">播放音频</button>
+
+<!-- 第二部分使用 getRocorderManager -->
+
+<view>
+  <button bindtap="start">开始录音</button>
+  <button bindtap="stop">停止录音</button>
+  <button bindtap="play">播放录音</button>
+</view>

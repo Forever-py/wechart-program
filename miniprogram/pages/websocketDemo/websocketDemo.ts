@@ -22,23 +22,25 @@ Page({
     let that = this;
     // 在线服务器位置 http://coolaf.com/tool/chattest
 
-    // 建立连接
-    wx.connectSocket({
-      url: 'ws://82.157.123.54:9010/ajaxchattest'
+    // 发送socket数据
+    wx.sendSocketMessage({
+      data: that.message
     })
 
-    // 连接成功与否的判断
-    wx.onSocketOpen(() => {
-      // 发送socket数据
-      wx.sendSocketMessage({
-        data: that.message
-      })
-    })
 
     // 监听 WebSocket 接受到服务器的消息事件
     wx.onSocketMessage((data) => {
       console.log('[接收到服务器的数据]', data);
+      that.setData({
+        responseString: `<h1>[接收到服务器的数据]${data.data}</h1>`
+      })
     })
+
+    // 监听 WebSocket 错误事件
+    wx.onSocketError((err) => {
+      console.log('[服务器错误]', err)
+    })
+
   },
 
   /**
@@ -60,13 +62,30 @@ Page({
    */
   onShow() {
 
+    // 建立连接
+    wx.connectSocket({
+      url: 'ws://82.157.123.54:9010/ajaxchattest'
+    })
+
+    // 连接成功与否的判断
+    wx.onSocketOpen(() => {
+      // 发送socket数据
+      console.log('通讯连接成功')
+    })
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
+    // 关闭 webSocket 
+    wx.closeSocket({})
 
+    
+    // 监听 WebSocket 连接关闭事件
+    wx.onSocketClose(function (res) {
+      console.log('WebSocket 已关闭！', res)
+    })
   },
 
   /**

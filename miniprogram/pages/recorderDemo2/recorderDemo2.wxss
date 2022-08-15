@@ -1,0 +1,47 @@
+/* pages/recorderDemo2/recorderDemo2.wxss */
+
+.speak-style {
+  position: relative;
+  height: 240rpx;
+  width: 240rpx;
+  border-radius: 20rpx;
+  margin: 50% auto;
+  background-color: #26a5ff;
+}
+
+.sound-style {
+  position: absolute;
+  width: 74rpx;
+  height: 150rpx;
+  margin-top: 45rpx;
+  margin-left: 83rpx;
+}
+
+.record-style {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 120rpx;
+  width: 100%;
+  /* background-color: darkcyan; */
+}
+
+.record-style .btn-style {
+  width: calc(100% - 60rpx);
+  margin: 0 30rpx;
+}
+
+.board {
+  overflow: hidden;
+  border-bottom: 2rpx solid #26a5ff;
+}
+
+.cell {
+  display: flex;
+  margin: 20rpx;
+}
+
+.cell-db {
+  flex: 1;
+  position: relative;
+}
