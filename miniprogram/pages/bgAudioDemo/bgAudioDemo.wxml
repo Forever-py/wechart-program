@@ -1,0 +1,10 @@
+<view class="container">
+  <image class="bgaudio" src="http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"></image>
+  <view class="control-view">
+    <image src="/images/ht.png" bindtap="back"></image>
+    <image wx:if="{{currentType == 'play'}}" src="/images/pause.png" bindtap="stop"></image>
+    <!-- <image wx:if="{{currentType == 'stop'}}"  src="/images/stop.png" bindtap="stop"></image> -->
+    <image wx:if="{{currentType == 'pause'}}"  src="/images/play.png" bindtap="play"></image>
+    <image src="/images/qj.png" bindtap="front"></image>
+  </view> 
+</view>

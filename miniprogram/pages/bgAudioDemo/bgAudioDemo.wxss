@@ -1,0 +1,29 @@
+/* pages/bgAudioDemo/bgAudioDemo.wxss */
+
+.container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.bgaudio {
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 50%;
+}
+
+.control-view {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 200rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.control-view  image {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 10rpx;
+}

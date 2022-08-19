@@ -3,7 +3,7 @@
     <block wx:for="{{voices}}" wx:key="index">
       <view class="board">
         <view class="cell">
-          <view capture-bind:longpress="cell-db" bindtap="gotoPlay" data-key="{{item.filePath}}">
+          <view class="cell-db" bindtap="gotoPlay" data-key="{{item.filePath}}">
             <view class="date">存储路径：{{item.filePath}}</view>
             <view class="date">存储时间：{{item.createTime}}</view>
             <view class="date">音频大小：{{item.size}}</view>

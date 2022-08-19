@@ -37,7 +37,13 @@
     "pages/chat/chat",
     "pages/websocketDemo/websocketDemo",
     "pages/recorderDemo/recorderDemo",
-    "pages/recorderDemo2/recorderDemo2"
+    "pages/recorderDemo2/recorderDemo2",
+    "pages/backgroundMusic/backgroundMusic",
+    "pages/backgroundMusic2/backgroundMusic2",
+    "pages/bgAudioDemo/bgAudioDemo",
+    "pages/font/font",
+    "pages/appMusic/appMusic",
+    "pages/uploadImage/uploadImage"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -82,5 +88,8 @@
     "scope.userLocation": {
       "desc": "获取你当前位置信息用于小程序位置接口的效果展示"
     }
-  }
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ]
 }
