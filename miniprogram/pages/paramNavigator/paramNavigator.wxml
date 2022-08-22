@@ -1,0 +1,5 @@
+<view class="containers">
+  <button bindtap="storage">缓存带参跳转</button>
+  <navigator url="/pages/storage/storage?title=hello">navigator</navigator>
+  <button bindtap="wxapi">api传值</button>
+</view>

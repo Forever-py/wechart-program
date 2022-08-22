@@ -1,0 +1,15 @@
+<!--pages/loading/loading.wxml-->
+<view class="containers">
+  <view class="page-section">
+    <view class="bold" bindtap="controlLoad">loading组件</view>
+    <loading hidden="{{loadingHidden}}">加载中</loading>
+  </view>
+  <view class="page-section">
+    <view class="bold">动态loading...(showToast)</view>
+    <button bindtap="showToast">动态loading</button>
+  </view>
+  <view class="page-section">
+    <view class="bold">动态loading...(showLoading)</view>
+    <button bindtap="showLoading">动态loading</button>
+  </view>
+</view>

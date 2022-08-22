@@ -1,0 +1,34 @@
+/* pages/loading/index.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.containers {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  background: grey;
+}
+
+.page-section {
+  width: 90%;
+  padding: 10rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  display: flex;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.page-section button {
+  padding: 0;
+  width: auto;
+  background-color: green;
+}

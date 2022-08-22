@@ -1,1 +1,11 @@
 /* pages/uploadImage/uploadImage.wxss */
+.img-wapper {
+  width:100%;
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.img {
+  width: 300rpx;
+  height: 300rpx;
+}

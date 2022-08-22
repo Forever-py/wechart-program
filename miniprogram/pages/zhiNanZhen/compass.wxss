@@ -1,0 +1,10 @@
+/* pages/zhiNanZhen/compass.wxss */
+@import './zhinanzhen.wxss';
+.text {
+  font-size: 56rpx;
+  padding-top: 50rpx;
+}
+
+.text text{
+  margin-bottom: 50rpx;
+}

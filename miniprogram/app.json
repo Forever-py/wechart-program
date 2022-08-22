@@ -43,7 +43,15 @@
     "pages/bgAudioDemo/bgAudioDemo",
     "pages/font/font",
     "pages/appMusic/appMusic",
-    "pages/uploadImage/uploadImage"
+    "pages/uploadImage/uploadImage",
+    "pages/loading/index",
+    "pages/file/file",
+    "pages/storage/storage",
+    "pages/storageDemo/storageDemo",
+    "pages/paramNavigator/paramNavigator",
+    "pages/zhiNanZhen/zhinanzhen",
+    "pages/zhiNanZhen/compass",
+    "pages/WiFiDemo/WiFiDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",

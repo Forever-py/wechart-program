@@ -1,0 +1,6 @@
+<view class="btn-area">
+  <navigator url="/pages/storage/storage">跳转至新的页面</navigator>
+  <view class="section">
+    <input type="text" placeholder="输入名字" bindblur="getInput" />
+  </view>
+</view>

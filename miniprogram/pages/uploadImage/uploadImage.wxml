@@ -1,2 +1,7 @@
-<!--pages/uploadImage/uploadImage.wxml-->
-<text>pages/uploadImage/uploadImage.wxml</text>
+<button bindtap="chooseImage">获取图片</button>
+<button bindtap="getImageInfo">获取图片信息</button>
+<button bindtap="previewImage">预览图片</button>
+<button bindtap="saveImage">保存至手机相册</button>
+<view class="img-wapper">
+  <image class="img" wx:for="{{tempFilePaths}}" wx:key="index" src="{{item}}" bindtap="previewImage" data-src="{{item}}"></image>
+</view>

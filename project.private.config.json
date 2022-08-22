@@ -10,7 +10,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/uploadImage/uploadImage",
+          "pathName": "pages/WiFiDemo/WiFiDemo",
           "query": "",
           "launchMode": "default",
           "scene": null

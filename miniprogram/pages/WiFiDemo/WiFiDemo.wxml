@@ -1,0 +1,14 @@
+<view class="containers">
+  <view class="text">一键链接WiFi</view>
+  <form class="form" bindsubmit="connectWiFi">
+    <view class="section">
+      <text>wifi账号：</text>
+      <input type="text" placeholder="请输入wifi账号" name="wifiName" />
+    </view>
+    <view class="section">
+      <text>wifi密码：</text>
+      <input type="password" placeholder="请输入wifi密码" name="wifiPwd" />
+    </view>
+    <button form-type="submit" type="primary">连接wifi</button>
+  </form>
+</view>
