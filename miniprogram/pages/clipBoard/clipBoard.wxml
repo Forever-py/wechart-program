@@ -1,0 +1,6 @@
+<view class="container">
+  <text>性能监控 剪切板</text>
+  <text>{{datail}}</text>
+  <button bindtap="copyTBL">一键复制操作</button>
+  <button bindtap="show">显示复制内容</button>
+</view>

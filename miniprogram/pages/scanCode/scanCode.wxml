@@ -1,0 +1,7 @@
+<view>
+  <text>只能从相机扫码</text>
+  <button bindtap="scanCode1">扫一扫</button>
+  <text>允许从相机和相册扫码</text>
+  <button bindtap="scanCode2">扫一扫</button>
+  <image src="{{src}}"></image>
+</view>

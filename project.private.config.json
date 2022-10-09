@@ -10,7 +10,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/WiFiDemo/WiFiDemo",
+          "pathName": "pages/productScanCode/productScanCode",
           "query": "",
           "launchMode": "default",
           "scene": null

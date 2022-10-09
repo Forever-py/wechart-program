@@ -10,5 +10,13 @@
       <input type="password" placeholder="请输入wifi密码" name="wifiPwd" />
     </view>
     <button form-type="submit" type="primary">连接wifi</button>
+    <button bindtap="startSearch" style="margin-top: 10rpx;">搜索附件wifi</button>
   </form>
+  <view>
+    <block wx:for="{{wifiList}}" wx:key="{{index}}">
+      <view>
+        <text>{{item.SSID}}</text>
+      </view>
+    </block>
+  </view>
 </view>

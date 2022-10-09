@@ -51,7 +51,11 @@
     "pages/paramNavigator/paramNavigator",
     "pages/zhiNanZhen/zhinanzhen",
     "pages/zhiNanZhen/compass",
-    "pages/WiFiDemo/WiFiDemo"
+    "pages/WiFiDemo/WiFiDemo",
+    "pages/clipBoard/clipBoard",
+    "pages/accelerometer/accelerometer",
+    "pages/scanCode/scanCode",
+    "pages/productScanCode/productScanCode"
   ],
   "window": {
     "backgroundTextStyle": "dark",

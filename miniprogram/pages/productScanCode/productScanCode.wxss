@@ -1,0 +1,9 @@
+/* pages/productScanCode/productScanCode.wxss */
+
+.page_db_spacing {
+  margin-top: 50rpx;
+}
+
+.weui-cells__title {
+margin-bottom: 10rpx;
+}

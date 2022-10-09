@@ -1,0 +1,17 @@
+<view class="panel_root">
+  <view class="view_top" animation="{{animation1}}">
+    <image class="img_top" src="/images/yyy.png"></image>
+  </view>
+  <view class="view_bottom"  animation="{{animation2}}">
+    <image class="img_bottom" src="/images/yyy.png"></image>
+  </view>
+
+  <view class="panel_bottom">
+    <view class="panel_loading" hidden="{{hasResult != 2}}">
+      <image class="img_loading" src="{{img_url}}"></image>
+      <text class="text_label">正在搜索同一时刻摇晃手机的人</text>
+    </view>
+    <view class="panel_result" hidden="{{hasResult != 1}}">哈哈</view>
+    <button class="btn_test" bindtap="startAnimation">测试</button>
+  </view>
+</view>

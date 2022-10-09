@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    wifiList: []
   },
 
   /**
@@ -128,7 +128,7 @@ Page({
   },
 
   /**
-   * 连接操作
+   * 连接wifi操作
    */
   Connected() {
     let that = this;
@@ -146,6 +146,60 @@ Page({
           title: 'wifi连接失败',
           duration: 2000
         })
+      }
+    })
+  },
+
+  /**
+   * 搜索wifi
+   */
+  startSearch() {
+    let that = this;
+    const getWifiList = () => {
+      wx.getWifiList({
+        success(res) {
+          wx.onGetWifiList((res)=>{
+            const wifiList = res.wifiList.map(wifi=> {
+              const strength = Math.ceil(wifi.signalStrength * 4)
+              return Object.assign(wifi, {strength})
+            });
+            console.log(res.wifiList)
+            that.setData({wifiList})
+          })
+        },
+        fail(err) {
+          console.error(err)
+        }
+      })
+    };
+
+    const startWifi = () => {
+      wx.startWifi({
+        success: getWifiList,
+        fail(err) {
+          console.error(err)
+        }
+      })
+    };
+
+    // 获取系统信息
+    wx.getSystemInfo({
+      success(res) {
+        console.log(res)
+        const isIOS = res.platform === 'ios';
+        if (isIOS) {
+          wx.showModal({
+            title: '提示',
+            content: '由于系统限制，ios用户请手动先进入系统wifi页面，然后返回小程序',
+            showCancel: false,
+            success() {
+              // 开启wifi搜索
+              startWifi();
+            }
+          })
+          return;
+        }
+        startWifi();
       }
     })
   }
